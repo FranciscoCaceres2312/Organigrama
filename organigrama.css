@@ -1,0 +1,62 @@
+.organigrama ul {
+    padding-left: 40px;
+    position: relative;
+  }
+  
+  .organigrama li {
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .organigrama li:before,
+  .organigrama li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 20px;
+  }
+  
+  .organigrama li:after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+  }
+  
+  .organigrama li:first-child:before,
+  .organigrama li:last-child:after {
+    border: 0;
+  }
+  
+  .organigrama li span {
+    display: inline-block;
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .organigrama ul ul li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+  }
+  
+  .organigrama li:last-child ul li:before {
+    height: 0;
+  }
+  
+  .organigrama li:last-child:before {
+    height: 20px;
+  }
+  
+  .organigrama li:last-child:after {
+    height: 0;
+  }
+  
